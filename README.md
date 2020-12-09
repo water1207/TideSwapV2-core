@@ -8,4 +8,4 @@ The new funds of the liquidity provider will be kept by the contract temporarily
 
 Because different users participate in the market making within an hour, the proportion of the two kinds of tokens is different, and the two assets proportion will fluctuate.
 
-![image](https://github.com/water1207/TideSwapV2-core/image.png)
+![image](https://github.com/water1207/TideSwapV2-core/blob/master/image.png)
