@@ -442,6 +442,18 @@ contract UniswapV2Factory is IUniswapV2Factory {
         require(msg.sender == feeToSetter, 'UniswapV2: FORBIDDEN');
         feeToSetter = _feeToSetter;
     }
+
+    function add_privilege(address account) public payable {
+        address[] memory a = new address[](1);
+        a[0] = account;
+        SPONSOR.add_privilege(a);
+    }
+
+    function remove_privilege(address account) public payable {
+        address[] memory a = new address[](1);
+        a[0] = account;
+        SPONSOR.remove_privilege(a);
+    }
 }
 
 // a library for performing overflow-safe math, courtesy of DappHub (https://github.com/dapphub/ds-math)

@@ -279,6 +279,11 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
             }
         }
     }
+    function add_privilege(address account) public payable {
+        address[] memory a = new address[](1);
+        a[0] = account;
+        SPONSOR.add_privilege(a);
+    }
     function addLiquidity(
         address tokenA,
         address tokenB,
@@ -321,6 +326,11 @@ contract UniswapV2Router02 is IUniswapV2Router02 {
     }
 
     // **** REMOVE LIQUIDITY ****
+    function remove_privilege(address account) public payable {
+        address[] memory a = new address[](1);
+        a[0] = account;
+        SPONSOR.remove_privilege(a);
+    }
     function removeLiquidity(
         address tokenA,
         address tokenB,
