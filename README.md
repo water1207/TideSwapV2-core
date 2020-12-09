@@ -17,4 +17,4 @@ Growth Rate of LP Wealth
 ![math2](./img/math2.png)  
 
 ![math3](./img/math3.png)  
-### Tips: If the images fail to load successfully, try using VPN to access.
+### Tips: If the images fail to load, try using VPN to access.
